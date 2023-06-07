@@ -21,7 +21,7 @@ document.querySelector('button[type="submit"]')
     event.preventDefault()
     const firstNameField = document.getElementById('firstName')
     const lastNameField = document.getElementById('lastName')
-    const emailField = document.getElementById('email')
+    //const emailField = document.getElementById('email')
     const textareaField = document.getElementById('open-text-area')
     const productField = document.getElementById('product')
     const helpRadio = document.querySelector('input[value="ajuda"]')
@@ -36,7 +36,7 @@ document.querySelector('button[type="submit"]')
       return showAndHideErrorMessage()
     }
     if (!emailField.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
-      // return showAndHideErrorMessage()
+      return showAndHideErrorMessage()
     }
     firstNameField.value = ''
     lastNameField.value = ''

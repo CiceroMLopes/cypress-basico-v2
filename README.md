@@ -1,29 +1,25 @@
-# Testes automatizados com Cypress - Básico
+# cypress-basico-v2
 
-👋 Seja bem-vindo(a)!
+Projeto criado para estudos, com foco no material do curso de Testes automatizados com Cypress -Básico
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+## Pré-requisitos (tais como Node.js, npm, git, etc.)
+É necessário ter Node.js e npm instalados para execução do projeto.
 
-## O que você vai aprender
+> Foram utilizadas v18.15.0 e 9.5.0 de Node.js e npm. Sugiro que use as mesmas versões ou posteriores.
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+## Passos para instalação das dependências
+Execute npm install(ou npm ipara a versão curta) para instalar as dependências do desenvolvedor.
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+## Testes
 
-## Vamos começar?
+Voce pode rodar os testes simulando uma viewport desktop ou mobile
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+### Desktop
+Run `npm test` (ou `npm t` para uma versão curta) para rodar os testes em headless.
 
-___
+Ou, run `npm run cy:open` para abrir Cypress no modo iterativo. 
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+### Mobile
+Run `npm test:mobile` (ou `npm t` para uma versão curta) para rodar os testes em headless.
+
+Ou, run `npm run cy:open:mobile` para abrir Cypress no modo iterativo. 

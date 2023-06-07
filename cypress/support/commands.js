@@ -1,0 +1,12 @@
+Cypress.Commands.add('fillMandatoryFieldsAndSubmit', () => {
+    cy.get('#firstName')
+        .type('Cisso')
+    cy.get('#lastName')
+        .type('Lopes')
+    cy.get('#email')
+        .type('cissolopes@cisso.com')
+    cy.get('#open-text-area')
+        .type('Tste')
+    cy.contains('button','Enviar')
+        .click()
+})
